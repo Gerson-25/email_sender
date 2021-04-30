@@ -1,14 +1,12 @@
 const functions = require('firebase-functions');
-const nodemailer = require('nodemailer');
-const admin = require("firebase-admin");
-const { google } = require('googleapis');
-const ical = require('node-ical');
-var html_to_pdf = require('html-pdf-node');
+const nodemailer = require('nodemailer'); //this is a node library that needs to be installed
+const admin = require("firebase-admin"); 
+const { google } = require('googleapis'); 
 const OAuth2 = google.auth.OAuth2;
-const ics = require('ics');
+const ics = require('ics'); //this is a node library that needs to be installed
 admin.initializeApp()
 
-const pdf  = require('html-pdf');
+const pdf  = require('html-pdf'); //this is a node library that needs to be installed
 const { object } = require('firebase-functions/lib/providers/storage');
 const { error } = require('firebase-functions/lib/logger');
 
